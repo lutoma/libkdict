@@ -19,3 +19,9 @@ there's an example file which shows some of libdict's functions. It is
 a good starting point to get an idea of how things work and can be found
 in examples/example.c. To compile it, run:
 	make example
+
+P.S.: Yes, i know there are other libraries doing the same. The reasons
+i still built my own one are:
+
+ 1. I needed it and didn't have internet at that point
+ 2. It had/has to work in Xelix
