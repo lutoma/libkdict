@@ -1,0 +1,4 @@
+*.o
+*.a
+examples/simple
+examples/advanced
