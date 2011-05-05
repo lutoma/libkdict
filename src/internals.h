@@ -3,6 +3,7 @@
         #include <stdint.h>
         #include <stdio.h>
         #include <malloc.h>
+        #include <string.h>
 
         #define _debug printf
 #else /* !XELIX */
