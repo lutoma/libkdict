@@ -1,0 +1,21 @@
+libdict README file
+
+Libdict is a small library that intends to bring python-style
+dictionaries to C. It provides various functions for dictionary
+interaction like dict_get, dict_set etc.
+
+Compilation instructions
+========================
+
+To compile libdict to a static library, simply run:
+	make static
+and you'll get a libdict.a.
+
+Docs
+====
+
+For documentation on how to use libdict, see the doc directory. Also,
+there's an example file which shows some of libdict's functions. It is
+a good starting point to get an idea of how things work and can be found
+in examples/example.c. To compile it, run:
+	make example
