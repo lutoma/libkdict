@@ -13,10 +13,12 @@ libdict.a: src/set.c src/new.c src/destroy.c src/get.c src/del.c src/clear.c src
 	gcc -I include -o src/internals.o -c src/internals.c
 	ar -rs libdict.a src/*.o
 
-example: libdict.a examples/example.c
-	gcc -I include -L. -o example examples/example.c -ldict
+examples: libdict.a examples/simple.c examples/advanced.c
+	gcc -I include -L. -o examples/simple examples/simple.c -ldict
+	gcc -I include -L. -o examples/advanced examples/advanced.c -ldict
 
 clean:
 	rm -f src/*.o
 	rm -f libdict.a
-	rm -f example
+	rm -f examples/simple
+	rm -f examples/advanced
