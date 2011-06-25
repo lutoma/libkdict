@@ -17,7 +17,12 @@
  * <http://www.gnu.org/licenses/>.
  */
 
-#include <dict.h>
+#ifndef XELIX
+	#include <dict.h>
+#else /* !XELIX */
+	#include <lib/dict.h>
+#endif /* !XELIX */
+
 #include "internals.h"
 
 // Find an entry. Returns NULL if there's no such entry.
