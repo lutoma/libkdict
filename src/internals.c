@@ -31,12 +31,12 @@ entry_t* _findEntry(dict_t* dict, char* key)
 	entry_t* entry = dict->firstEntry;
 	while(entry != NULL)
 	{
-		if(entry->key == key)
+		if(strcmp(entry->key, key) == 0)
 			break;
-	
+
 		entry = entry->next;
 	}
-	
+
 	return entry;
 }
 
