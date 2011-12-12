@@ -31,7 +31,7 @@ entry_t* _findEntry(dict_t* dict, char* key)
 	entry_t* entry = dict->firstEntry;
 	while(entry != NULL)
 	{
-		if(strcmp(entry->key, key) == 0)
+		if((dict->use_strcmp && !strcmp(entry->key, key)) || (!dict->use_strcmp && entry->key == key))
 			break;
 
 		entry = entry->next;

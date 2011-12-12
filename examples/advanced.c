@@ -9,7 +9,7 @@
 int main()
 {
 	// Create a new dictionary...
-	dict_t* dictionary = dict_new();
+	dict_t* dictionary = dict_new(false);
 
 	// Store something in the dictionary...
 	dict_set(dictionary, "testkey", "Hello World!");
@@ -27,7 +27,7 @@ int main()
 	 */
 	 
 	// Store a dictionary in the dictionary
-	dict_set(dictionary, "thedict", dict_new());
+	dict_set(dictionary, "thedict", dict_new(true));
 	
 	// Store something in the dictionary in the dictionary
 	dict_set(dict_get(dictionary, "thedict"), "anothertest", "ohai");

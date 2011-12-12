@@ -25,6 +25,7 @@
         #include <stdio.h>
         #include <malloc.h>
         #include <string.h>
+	#include <stdbool.h>
 
         #define _debug printf
 #else /* !XELIX */
